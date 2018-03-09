@@ -1,0 +1,15 @@
+spring:
+ profiles:
+  active: prod
+ datasource:
+  driver-class-name: com.mysql.jdbc.Driver
+  url: jdbc:mysql://47.97.193.225:3306/ls
+  username: root
+  password: 123456
+ jpa:
+  show-sql: true
+ thymeleaf:
+  mode: HTML5
+  encoding: UTF-8
+  content-type: text/html
+  cache: false

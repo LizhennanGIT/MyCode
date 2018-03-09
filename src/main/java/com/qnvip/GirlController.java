@@ -29,7 +29,7 @@ public class GirlController {
 	}
 	@GetMapping("/girlInfo")	
 	public String girlInfo(Model model){
-		model.addAttribute("name", "张三");
+		model.addAttribute("name", "李四");
 		return "test";
 	}
 }

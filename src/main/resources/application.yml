@@ -7,7 +7,7 @@ spring:
   username: root
   password: 123456
  jpa:
-  show-sql: false
+  show-sql: true
  thymeleaf:
   mode: HTML5
   encoding: UTF-8

@@ -1,24 +1,13 @@
-package com.qnvip;
+package com.qnvip.vo;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
-@Entity
 public class Girl {
-	@Id
-	@GeneratedValue
+
 	private Integer id;
 	
 	private String cupSize;
 	
 	private Integer age;
-
-	
-	
-	public Girl() {
-		super();
-	}
 
 	public Integer getId() {
 		return id;

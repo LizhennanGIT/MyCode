@@ -3,9 +3,11 @@ spring:
   active: prod
  datasource:
   driver-class-name: com.mysql.jdbc.Driver
-  url: jdbc:mysql://47.97.193.225:3306/ls
+  url: jdbc:mysql://47.97.193.225:3306/ls?useSSL=false
   username: root
   password: 123456
+ mybatis:
+  mapper-locations: classpath:mapper/*.xml
  jpa:
   show-sql: true
  thymeleaf:

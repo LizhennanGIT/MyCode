@@ -2,6 +2,8 @@ package com.qnvip;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,14 +13,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.qnvip.dao.GirlDAO;
+import com.qnvip.vo.Girl;
+
 @Controller
 public class GirlController {
 	@Autowired
-	private GirlRepository girlRepository;
-	@GetMapping("/getGirls")
-	public List<Girl> getGirls(){
-		return girlRepository.findAll();
-	}
+	private GirlDAO girlDao;
 	
 	@PostMapping("/girlAdd")
 	public Girl girlAdd(@RequestParam("cupSize") String cupSize,@RequestParam("age") Integer age){
@@ -29,6 +30,7 @@ public class GirlController {
 	}
 	@GetMapping("/girlInfo")	
 	public String girlInfo(Model model){
+		girlDao.getGirl();
 		model.addAttribute("name", "ÀîËÄ");
 		return "test";
 	}

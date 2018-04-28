@@ -30,8 +30,8 @@ public class GirlController {
 	}
 	@GetMapping("/girlInfo")	
 	public String girlInfo(Model model){
-		girlDao.getGirl();
-		model.addAttribute("name", "ÀîËÄ");
+		List<Girl> list=girlDao.getGirl();
+		model.addAttribute("name", "å¼ ä¸‰");
 		return "test";
 	}
 }

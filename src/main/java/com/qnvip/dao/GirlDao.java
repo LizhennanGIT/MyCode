@@ -8,6 +8,6 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.qnvip.vo.Girl;
 @Mapper  
-public interface GirlDAO {
+public interface GirlDao {
 	List<Girl> getGirl();
 }

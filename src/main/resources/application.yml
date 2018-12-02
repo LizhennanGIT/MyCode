@@ -3,7 +3,7 @@ spring:
   active: prod
  datasource:
   driver-class-name: com.mysql.jdbc.Driver
-  url: jdbc:mysql://47.97.193.225:3306/ls?useSSL=false&characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true
+  url: jdbc:mysql://127.0.0.1:3306/ls?useSSL=false&characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true
   username: root
   password: 123456
  jpa:

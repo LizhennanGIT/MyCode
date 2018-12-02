@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.qnvip.dao")
-public class GirlApplication {
+public class WebBaseApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(GirlApplication.class, args);
+		SpringApplication.run(WebBaseApplication.class, args);
 	}
 }

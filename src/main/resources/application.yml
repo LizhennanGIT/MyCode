@@ -19,5 +19,6 @@ endpoints:
   sensitive: false
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.qnvip.vo
 # 数据库字段，下划线转驼峰
   map-underscore-to-camel-case: true
